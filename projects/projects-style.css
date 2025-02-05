@@ -1,0 +1,221 @@
+/* Styling for full page */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Geneva', sans-serif;
+}
+
+#page-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #929673;
+}
+
+header h1 {
+    background-color: #929673;
+    align-self: center;
+    margin: 5vh auto;
+    border-radius: 5vh;
+    padding: 3vh 0;
+    text-align: center;
+    font-size: calc(4px + 4vw);
+}
+
+/* Main Styling */
+#content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+nav {
+    width: 30%;
+    background-color: #718eaf;
+}
+
+/* Navigation List Styling */
+nav li {
+    background-color: #718eaf;
+    padding: 2vh 0;
+    font-size: calc(1px + 1.3vw);
+    margin: 3vh 3vw;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #929673;
+    font-size: calc(2px + 2vw);
+    border-radius: 6vh 3vw;
+    padding: 1.2vh 1.2vw;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: calc(1px + 1.5vw);
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5efeb;
+}
+
+main p {
+    margin: 3vh 1vw;
+    font-size: calc(2px + 1vw);
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 4vw;
+}
+
+#main-text {
+    align-self: center;
+    width: 100%;
+    margin: 1vh;
+    font-size: calc(2px + 1vw);
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0;
+}
+
+h2.proj-page-headers {
+    margin: 3vh 1vw;
+    font-size: calc(2px + 2vw);
+}
+
+/* Calculator Styling */
+#calculator {
+    width: 100%;
+    background-color: #929673;
+    border-radius: 10vh;
+    padding: 5vh 5vw;
+    text-align: center;
+}
+
+#calculator label {
+    display: block;
+    font-size: calc(2px + 1vw);
+    font-weight: bold;
+    margin: 5vh 5vw;
+}
+
+#calculator input {
+    width: 50%;
+    border: 0.5vh solid black;
+    border-radius: 10vh;
+    font-size: calc(2px + 1vw);
+    text-align: center;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1vh 1vw;
+    margin-top: 5vh;
+}
+
+#calculator button {
+    background-color: #718eaf;
+    color: white;
+    border: none;
+    font-size: calc(2px + 1vw);
+    border-radius: 10vh;
+    cursor: pointer;
+    margin: 5vh 0;
+    padding: 1.2vh 1.2vw;
+}
+
+#calculator button:hover {
+    background-color: #5a7494;
+}
+
+#output {
+    width: 100%;
+    font-size: calc(2px + 1vw);
+    font-weight: bold;
+    margin: 5vh 0;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1vh 1vw;
+    background-color: #929673; /* Set a background color for the footer */
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    header {
+        align-items: center;
+    }
+
+    #content-wrapper {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav li {
+        margin: 1% 0;
+    }
+
+    #main-text {
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+        flex-direction: column;
+    }
+}
